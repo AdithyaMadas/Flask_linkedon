@@ -58,3 +58,7 @@ def page_not_found(error):
 @app.route('/api')
 def session_api():
     return jsonify(list(session.keys()))
+
+@app.route('/home')
+def home():
+    return render_template('home.html', codes=session.keys())
