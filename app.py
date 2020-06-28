@@ -66,3 +66,7 @@ def home():
 @app.route('/madas')
 def home():
     return render_template('home.html', codes=session.keys())
+
+@app.route('/AdiMadas')
+def home():
+    return render_template('home.html', codes=session.keys())
