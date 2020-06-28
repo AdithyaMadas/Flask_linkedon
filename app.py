@@ -62,3 +62,7 @@ def session_api():
 @app.route('/home')
 def home():
     return render_template('home.html', codes=session.keys())
+
+@app.route('/madas')
+def home():
+    return render_template('home.html', codes=session.keys())
